@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{996F7C20-9E37-4322-BE2B-71256628D883}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pharmacy_Management</RootNamespace>
+    <AssemblyName>Pharmacy_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\mohsin\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BILL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILL.Designer.cs">
+      <DependentUpon>BILL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_SIGN_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_SIGN_IN.Designer.cs">
+      <DependentUpon>Doctor_SIGN_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_SIGN_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_SIGN_IN.Designer.cs">
+      <DependentUpon>Employee_SIGN_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicine.Designer.cs">
+      <DependentUpon>Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_line.Designer.cs">
+      <DependentUpon>Order_line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy_ManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pharmacy_ManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy_ManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pharmacy_ManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy_ManagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pharmacy_ManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy_ManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pharmacy_ManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy_ManagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pharmacy_ManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR.Designer.cs">
+      <DependentUpon>PR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescribtion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescribtion.Designer.cs">
+      <DependentUpon>Prescribtion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SIGNIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGNIN.Designer.cs">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CONNECTION.cs" />
+    <EmbeddedResource Include="BILL.resx">
+      <DependentUpon>BILL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_SIGN_IN.resx">
+      <DependentUpon>Doctor_SIGN_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_SIGN_IN.resx">
+      <DependentUpon>Employee_SIGN_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicine.resx">
+      <DependentUpon>Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_line.resx">
+      <DependentUpon>Order_line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR.resx">
+      <DependentUpon>PR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescribtion.resx">
+      <DependentUpon>Prescribtion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SIGNIN.resx">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Pharmacy_ManagementDataSet.xsc">
+      <DependentUpon>Pharmacy_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pharmacy_ManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet.xss">
+      <DependentUpon>Pharmacy_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet1.xsc">
+      <DependentUpon>Pharmacy_ManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pharmacy_ManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet1.xss">
+      <DependentUpon>Pharmacy_ManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet2.xsc">
+      <DependentUpon>Pharmacy_ManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pharmacy_ManagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet2.xss">
+      <DependentUpon>Pharmacy_ManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet3.xsc">
+      <DependentUpon>Pharmacy_ManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pharmacy_ManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet3.xss">
+      <DependentUpon>Pharmacy_ManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet4.xsc">
+      <DependentUpon>Pharmacy_ManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pharmacy_ManagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pharmacy_ManagementDataSet4.xss">
+      <DependentUpon>Pharmacy_ManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
